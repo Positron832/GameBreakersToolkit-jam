@@ -1,3 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Is it over?</title>
+    <meta charset="UTF-8"/>
+    <style>
+      .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        background-color: lime;
+        padding: 5px;
+      }
+      
+      .grid-container>div{
+        text-align: center;
+        font-size: 10px;
+        background-image: radial-gradient(blue, red);
+      }
+      
+      .item1{
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="grid-container">
+      <div class="item1">Hello my name Pizza</div>
+      <div class="item2">Hello my name is Pepsi</div>
+      <div class="item3">Hello my name is Burger</div>
+      <div class="item4">Hello my name is Sallad</div>
+      <div class="item5">Hello my name is Google</div>
+      <div class="item6">Hello my name is Angry Bird</div>
+      <div class="item7" onclick="document.location='stage3.html'">Is this over now?</div>
+    </div>
+    
+  </body>
+</html>
